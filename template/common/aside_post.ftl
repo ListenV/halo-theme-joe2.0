@@ -1,7 +1,4 @@
 <aside class="joe_aside">
-  <#if settings.show_blogger!true>
-    <#include "../module/blogger.ftl">
-  </#if>
   <div class="joe_aside_post">
     <#assign enable_toc = (metas?? && metas.enable_toc?? && metas.enable_toc?trim!='')?then(metas.enable_toc?trim,'true')>
     <#if enable_toc == 'true' && settings.enable_toc == true>
